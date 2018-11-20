@@ -1,0 +1,66 @@
+{
+  "steps": [
+    {
+      "sections": [
+        {
+          "title": "About F3 Sports Coaching",
+          "layout": "formBlock",
+          "paras": [
+            {
+              "para": "Being the first of its kind over all Sports Science training in Pune, F3 Sports is revolutionizing the way we approach Sports in Pune. Our team of Sports Science experts is introducing scientific methods and processes for developing athletes and achieving sporting excellence."
+            },
+            {
+              "para": "These 8 experts include highly qualified and experienced Sport Physicians, Sports Psychologist, Strength & Conditioning trainers, Physiotherapists, Sports Nutritionist and Biomechanist along with other Sports Science support staff who work together as a unit to help athletes strive for excellence."
+            },
+            {
+              "para": "Our flagship programme is the Long Term Athlete Development (LTAD) programme which aims at identifying and developing young sporting talent in different sports using ahighly scientific approach. Our High Performance Model (HPM) of Athlete Development isutilized by senior and professional athletes as well as recreational athletes passionate about their respective sports."
+            }
+          ]
+        },
+        {
+          "title": "Our Vision",
+          "subheader": "At F3 Sports Coaching, we are looking achieve the following goals:",
+          "layout": "list",
+          "lists": [
+            {
+              "list": "To identify, develop talent from all parts of the country and to help them excel at the international stage under our Long Term Athlete Development Programme"
+            },
+            {
+              "list": "To create awareness about and prevent burnout in Sport. A high percentage of young athletes suffer mental or physical burnout and opt of sport despite having the talent to excel."
+            },
+            {
+              "list": "To facilitate a career in Sports by focusing on Athlete Career and Education which would include their life post-retirement."
+            },
+            {
+              "list": "To create a culture of sporting excellence on which the society can thrive upon."
+            }
+          ]
+        },
+        {
+          "title": "The Concept and what makes F3 Unique",
+          "layout": "list",
+          "lists": [
+            {
+              "list": "One Stop Centre: F3 has highly qualified coaches from different Sports Science disciplines at one location. It is perhaps the only team to have experts who have studied from the best institutes abroad and also understand the Indian context."
+            },
+            {
+              "list": "Team Input: Our team of experts works very closely and monitors the progress of each individual athlete."
+            },
+            {
+              "list": "LatestScientificEquipment:UseoflatestSportsScienceEqu ipment t o a s s e s s , measure, train and improve fitness levels."
+            },
+            {
+              "list": "Customized Service: We respect the fact that each athlete is different and the course of action cannot be the same for a group of athletes. “Attention to the Individual” is our primary focus."
+            },
+            {
+              "list": "Transparency: One can only improve what one can Measure. We measure and track an athlete’s progress periodically using reliable and accurate equipment."
+            },
+            {
+              "list": "Long-Term Association: We are an athlete’s support team through the years so that we stand by them at all times and assist them in different ways using Sports Science"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
