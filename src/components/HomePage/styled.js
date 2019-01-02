@@ -1,5 +1,15 @@
 import styled from "styled-components";
 import Asset from "../../utils/AssetService";
+import { Jumbotron,Button } from 'reactstrap';
+
+const StyledJumbotron = styled(Jumbotron)`
+width: 100%;
+height: 600px;
+background-repeat: no-repeat;
+background-position: center center;
+background-image: ${`url(${Asset("assets/logos/jumbotron.jpg")})`};
+background-size: cover;
+`;
 
 const HomePageImage = styled.div`
   width: 100%;
@@ -31,4 +41,4 @@ const DivBlock = styled.div`
   }
 `;
 
-export { HomePageImage, Image, DivBlock };
+export { HomePageImage, Image, DivBlock,StyledJumbotron };
