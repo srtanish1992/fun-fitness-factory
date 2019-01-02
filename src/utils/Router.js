@@ -9,7 +9,7 @@ const Router = () => (
     {global => (
       <BrowserRouter>
         <div>
-          <Navigation
+          {/* <Navigation
             links={[
               {
                 label: "Images",
@@ -20,7 +20,7 @@ const Router = () => (
                 route: "/videos"
               }
             ]}
-          />
+          /> */}
 
           <HomePage />
         </div>
