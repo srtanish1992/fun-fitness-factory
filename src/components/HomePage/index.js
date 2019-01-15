@@ -3,6 +3,10 @@ import { GlobalState } from "../../utils/GlobalState";
 import { HomePageImage, Image, DivBlock,StyledJumbotron } from "./styled";
 import Vision from "../Vision";
 import Trainers from "../Trainers";
+import ContactUs from "../ContactUs";
+import Gallery from "../Gallery";
+import Footer from "../Footer";
+import Services from "../Services";
 import { Jumbotron,Button } from 'reactstrap';
 import {Modal,Nav,NavItem} from "react-bootstrap";
 export default class HomePage extends React.Component {
@@ -60,9 +64,14 @@ export default class HomePage extends React.Component {
           </StyledJumbotron>
           
           <Vision/>
+          <Services/>
           <Trainers/>
+          <Gallery/>
+          
+          
+        <ContactUs/>
         
-        
+        <Footer/>
         
         {/* 
         <GlobalState>
