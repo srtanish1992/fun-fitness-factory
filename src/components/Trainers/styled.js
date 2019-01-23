@@ -12,6 +12,14 @@ const TrainerCard = styled.div`
 width:200px;
 height:200px;
 position:absolute;
+left: 515px;
+`;
+
+const TrainerCard1 = styled.div`
+width:200px;
+height:200px;
+position:absolute;
+left: 815px;
 `;
 
 const Trainerinfo = styled.div`
@@ -78,4 +86,4 @@ span {
 `;
 
 
-export {Trainerinfo,TrainerName,TrainerCard,TrainerImage,TrainerTitle,TrainerSocial}
+export {Trainerinfo,TrainerName,TrainerCard,TrainerImage,TrainerTitle,TrainerSocial,TrainerCard1}

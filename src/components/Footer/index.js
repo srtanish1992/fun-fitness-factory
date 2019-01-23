@@ -7,16 +7,16 @@ import { faMap,faPhoneVolume, faEnvelope, faAngleRight } from '@fortawesome/free
 const Footer = () => {
     return (
         <React.Fragment>
-        <div style={{backgroundColor:"#212121",marginTop:"100px"}}>
+        <div style={{backgroundColor:"#212121",marginTop:"100px",paddingBottom:"40px"}}>
         <React.Fragment>
             <Grid>
-        <Row>
+        {/* <Row>
             <Col>
             <h4 style={{fontSize:"24px",color:"#ffffff",textTransform: "uppercase",fontWeight: "600",marginTop:"75px"}}>Newsletter</h4>
             <input type="email" name="Email" placeholder="Enter Your Email..." required="" />
             <input type="submit" value="Send" />
             </Col>
-        </Row>
+        </Row> */}
         </Grid>
         </React.Fragment>
         <div style={{marginTop:"130px"}}>
