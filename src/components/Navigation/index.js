@@ -1,34 +1,43 @@
 import React from "react";
-import Asset from "../../utils/AssetService";
-import {
-  NavWrapper,
-  Logo,
-  LogoContainer,
-  NavBar,
-  Nav,
-  NavItem
-} from "./styled";
+
+import {Nav,NavUl,NavLi} from "./styled";
 
 export default class Navigation extends React.Component {
+  constructor(props) {
+        super(props);
+
+        this.state = {};
+
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    handleScroll() {
+        this.setState({scroll: window.scrollY});
+    }
+  
+  componentDidMount() {
+        const el = document.querySelector('nav');
+        this.setState({top: el.offsetTop, height: el.offsetHeight});
+        window.addEventListener('scroll', this.handleScroll);
+    }
+  
+  componentDidUpdate() {
+        this.state.scroll > this.state.top ? 
+            document.body.style.paddingTop = `${this.state.height}px` :
+            document.body.style.paddingTop = 0;
+    }
+  
   render() {
     return (
-      <NavWrapper>
-        <NavBar>
-          <LogoContainer>
-            <Logo
-              src={Asset("assets/logos/logoff3.jpg")}
-              width="32"
-              height="32"
-            />
-          </LogoContainer>
-          <Nav className="pull-right">
-            <NavItem>About</NavItem>
-            <NavItem>Our Vision</NavItem>
-            <NavItem>Services</NavItem>
-            <NavItem>Contact</NavItem>
-          </Nav>
-        </NavBar>
-      </NavWrapper>
+      <Nav>
+        <NavUl>
+          <NavLi>Home</NavLi>
+          <NavLi>About</NavLi>
+          <NavLi>Careers</NavLi>
+          <NavLi>Contact</NavLi>
+          <NavLi>Help</NavLi>
+        </NavUl>
+      </Nav>
     );
   }
 }

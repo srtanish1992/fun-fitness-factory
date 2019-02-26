@@ -1,47 +1,39 @@
 import styled from "styled-components";
 
-const NavWrapper = styled.div`
+const Nav = styled.nav`
+width: 100%;
+margin: 0;
+top: 0;
+background-color: rgba(0, 0, 0, 1);
+color: #ccc;
+
+.fixed-nav {
   position: fixed;
-  left: 0px;
-  top: 0px;
-  height: 50px;
-  width: 100%;
-  background-color: rgb(38, 50, 66);
+}
 `;
 
-const NavBar = styled.div`
-  position: relative;
+const NavUl = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding-right: 150px;
+  height:80px;
+`;
+
+const NavLi = styled.li`
   height: 100%;
-  width: 100%;
-`;
-
-const LogoContainer = styled.div`
-  position: absolute;
-  left: 14px;
-  top: 50%;
-  transform: translate(0px, -50%);
-  height: 32px;
-  width: 32px;
-`;
-
-const Logo = styled.img`
-  vertical-align: middle;
-`;
-
-const Nav = styled.div`
-  position: relative;
-  display: inline-block;
-  top: 20px;
-  right: 50px;
-`;
-
-const NavItem = styled.a`
-  padding-right: 50px;
-  color: white;
-  &:hover {
-    color: white;
-  }
+  padding: 27px 34px;
+  text-align: center;
+  transition: all 0.3s ease-in;
   cursor: pointer;
+  font-size:20px;
+  li&:hover {
+    background: #848484;
+    color: #212121;
+    cursor:pointer;
+  }
 `;
 
-export { NavWrapper, Logo, LogoContainer, NavBar, Nav, NavItem };
+export { Nav,NavUl,NavLi };

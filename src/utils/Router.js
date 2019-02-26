@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import HomePage from "../components/HomePage";
+import HomePage from "../views/HomePage";
 import { GlobalState } from "../utils/GlobalState";
 
 const Router = () => (
@@ -9,7 +9,7 @@ const Router = () => (
     {global => (
       <BrowserRouter>
         <div>
-          <Navigation
+          {/* <Navigation
             links={[
               {
                 label: "Images",
@@ -20,7 +20,7 @@ const Router = () => (
                 route: "/videos"
               }
             ]}
-          />
+          /> */}
 
           <HomePage />
         </div>

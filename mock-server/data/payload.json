@@ -1,64 +1,113 @@
 {
-  "steps": [
+  "pages": [
     {
-      "sections": [
+      "homePage": 
+      [
         {
-          "title": "About F3 Sports Coaching",
-          "layout": "formBlock",
-          "paras": [
+          "id":1,
+          "sections":[
             {
-              "para": "Being the first of its kind over all Sports Science training in Pune, F3 Sports is revolutionizing the way we approach Sports in Pune. Our team of Sports Science experts is introducing scientific methods and processes for developing athletes and achieving sporting excellence."
+              "id":1,
+              "title":"What we do",
+              "paras":[
+                "At F3 Sports we are on a mission to revolutionising the way the people of India approach sports. Ours is a first of its kind sports science training in Pune. F3’s team of sports science experts are introducing scientific methods and processes for mentoring athletes and achieving sporting excellence both at the developmental stage as well as elite level.",
+                "We have a team of highly specialised, qualified and experienced sport physicians, sports psychologist, strength and conditioning trainers, physiotherapists, sports nutrition and biomechanics experts to look into the day to day needs of the athletes physical as well as mental well-being."
+              ]
             },
             {
-              "para": "These 8 experts include highly qualified and experienced Sport Physicians, Sports Psychologist, Strength & Conditioning trainers, Physiotherapists, Sports Nutritionist and Biomechanist along with other Sports Science support staff who work together as a unit to help athletes strive for excellence."
+              "id":2,
+              "title":"Founders",
+              "team":[
+                {
+                  "image":"satish",
+                  "name":"Satish Gaikwad",
+                  "position":"Founder and Director",
+                  "about":"Satish is the master par excellence who is a ICC coach and has a decade os experience, having worked with over 15,000 players including international, national and ranji trophy players. He has worked for well-known academies around the world which includes academies in UK, Dubai and Sri-Lanka."
+                },
+                {
+                  "image":"swati",
+                  "name":"Swati Saraf",
+                  "position":"Co-Founder and Director",
+                  "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
+                },
+                {
+                  "image":"swati",
+                  "name":"Swati Saraf",
+                  "position":"Co-Founder and Director",
+                  "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
+                },
+                {
+                  "image":"swati",
+                  "name":"Swati Saraf",
+                  "position":"Co-Founder and Director",
+                  "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
+                }
+              ]
             },
             {
-              "para": "Our flagship programme is the Long Term Athlete Development (LTAD) programme which aims at identifying and developing young sporting talent in different sports using ahighly scientific approach. Our High Performance Model (HPM) of Athlete Development isutilized by senior and professional athletes as well as recreational athletes passionate about their respective sports."
+              "id":3,
+              "title":"Gallery",
+              "images":[
+                {
+                  "image_id":0,
+                  "url": "assets/images/1.jpg"
+                },
+                {
+                  "image_id":1,
+                  "url":"assets/images/2.jpg"
+                },
+                {
+                  "image_id":2,
+                  "url":"assets/images/3.jpg"
+                },
+                {
+                  "image_id":3,
+                  "url":"assets/images/4.jpg"
+                },
+                {
+                  "image_id":4,
+                  "url":"assets/images/5.jpeg"
+                },
+                {
+                  "image_id":5,
+                  "url":"assets/images/6.jpg"
+                }
+              ]
+            },
+            {
+              "id":4,
+              "title":"Contact",
+              "logo":"assets/logos/logoff3.jpg",
+              "info":[
+                {
+                  "type":"normal",
+                  "icon":"faMapMarker",
+                  "content":" Pasaydan Bungalow, Opposite Ekta garden, Salisbury Park, Pune"
+                },
+                {
+                  "type":"normal",
+                  "icon":"faEnvelope",
+                  "content":"f3sportscoachingservices@gmail.com"
+                },
+                {
+                  "type":"normal",
+                  "icon":"faPhoneVolume",
+                  "content":"9766792824/9831765725"
+                },
+                {
+                  "type":"social",
+                  "icon":"faFacebook"
+                },
+                {
+                  "type":"social",
+                  "icon":"faInstagram"
+                }
+              ]
+
             }
+            
           ]
-        },
-        {
-          "title": "Our Vision",
-          "subheader": "At F3 Sports Coaching, we are looking achieve the following goals:",
-          "layout": "list",
-          "lists": [
-            {
-              "list": "To identify, develop talent from all parts of the country and to help them excel at the international stage under our Long Term Athlete Development Programme"
-            },
-            {
-              "list": "To create awareness about and prevent burnout in Sport. A high percentage of young athletes suffer mental or physical burnout and opt of sport despite having the talent to excel."
-            },
-            {
-              "list": "To facilitate a career in Sports by focusing on Athlete Career and Education which would include their life post-retirement."
-            },
-            {
-              "list": "To create a culture of sporting excellence on which the society can thrive upon."
-            }
-          ]
-        },
-        {
-          "title": "The Concept and what makes F3 Unique",
-          "layout": "list",
-          "lists": [
-            {
-              "list": "One Stop Centre: F3 has highly qualified coaches from different Sports Science disciplines at one location. It is perhaps the only team to have experts who have studied from the best institutes abroad and also understand the Indian context."
-            },
-            {
-              "list": "Team Input: Our team of experts works very closely and monitors the progress of each individual athlete."
-            },
-            {
-              "list": "LatestScientificEquipment:UseoflatestSportsScienceEqu ipment t o a s s e s s , measure, train and improve fitness levels."
-            },
-            {
-              "list": "Customized Service: We respect the fact that each athlete is different and the course of action cannot be the same for a group of athletes. “Attention to the Individual” is our primary focus."
-            },
-            {
-              "list": "Transparency: One can only improve what one can Measure. We measure and track an athlete’s progress periodically using reliable and accurate equipment."
-            },
-            {
-              "list": "Long-Term Association: We are an athlete’s support team through the years so that we stand by them at all times and assist them in different ways using Sports Science"
-            }
-          ]
+          
         }
       ]
     }

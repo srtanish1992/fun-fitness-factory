@@ -1,0 +1,111 @@
+import styled from "styled-components";
+
+const Title = styled.div`
+font-size: 40px;
+font-weight: 600;
+text-align:center;
+padding:50px 0;
+font-family: 'Raleway',sans-serif;
+color: #444;
+position:relative;
+z-index:-1;
+&::after {
+    border: 0.8px solid #333;
+    bottom: 32px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 10%;
+}
+
+`;
+
+const TeamDiv = styled.div`
+width:250px;
+position:relative;
+z-index:-1;
+border: 1px solid #ddd;
+border-top-bottom: 0px;
+border-top-bottom: none;
+`;
+
+const AboutDiv = styled.div`
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.70);
+`;
+
+const Image = styled.img`
+opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+`;
+
+const Info = styled.div`
+position:relative;
+&:hover {
+    cursor:pointer;
+}
+&:hover {
+    ${AboutDiv} {
+        opacity: 1;
+    }
+    ${Image} {
+        opacity: 0.3;
+    }
+}    
+`;
+
+const Description = styled.div`
+position:relative;
+z-index:-1;
+width:250px;
+font-size:20px;
+border: 1px solid #ddd;
+border-top-width: 0px;
+border-top-style: none;
+padding: 10px 0px;
+`;
+
+const Name = styled.div`
+text-align:center;
+font-size: 24px;
+line-height: 26px;
+color: #444;
+margin-bottom: 5px;
+font-family: 'Raleway', sans-serif;
+margin: 0 0 15px;
+font-weight: 500;
+`;
+
+const Position = styled.div`
+text-align:center;
+color: #444;
+margin-bottom: 5px;
+margin: 0 0 15px;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+line-height: 22px;
+font-weight: 200;
+`;
+
+const About = styled.div`
+color: white;
+font-size: 16px;
+padding: 16px 10px;
+font-family: 'Open Sans', sans-serif;
+line-height: 22px;
+font-weight: 200;
+`;
+
+export {Title,Image,Info,Name,Position,About,Description,AboutDiv,TeamDiv};
