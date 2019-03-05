@@ -17,7 +17,7 @@ export default class AboutUs extends React.Component {
                 </Title>
             <Row>
                 <Col lg={6} xs={12}>
-                    <Image width="100%" height={400} src={Asset("assets/images/WhatsApp Image 2019-01-13 at 12.07.18 PM (1).jpeg")} />
+                    <Image width="100%" height={400} src={Asset("assets/images/vision2.jpg")} />
                 </Col>
                 <Col lg={6} xs={12}>
                     {

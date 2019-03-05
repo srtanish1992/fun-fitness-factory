@@ -5,7 +5,7 @@ const Link = styled.span``;
 const Modal = styled.div`
   display: ${props => props.display};
   position: fixed;
-  z-index: 15;
+  z-index: 160000;
   left: 0;
   top: 0;
   width: 100%;
@@ -25,7 +25,7 @@ const CloseSpan = styled.span`
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 16;
+  z-index: 160000;
   font-size: 35px;
   font-weight: bold;
   transition: color 200ms linear;

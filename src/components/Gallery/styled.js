@@ -26,12 +26,23 @@ const ImageDiv = styled.div`
 `;
 
 const Image = styled.img`
-padding-right:10px;
-margin-bottom:30px;
+// padding-right:10px;
 width:360px;
 height:280px;
 position:relative;
-    z-index:-1;
+z-index:-1;
+border-radius: 5px 5px 5px 5px;
 `;
 
-export {ImageDiv,Title,Image};
+const Picdiv = styled.div`
+box-shadow: -5px 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+border-radius: 5px;
+margin-bottom:30px;
+&:hover {
+    box-shadow: -5px 8px 16px 0 rgba(0,0,0,0.2);
+    cursor:pointer;
+  }
+`;
+
+export {ImageDiv,Title,Image,Picdiv};

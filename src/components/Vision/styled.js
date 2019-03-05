@@ -9,6 +9,7 @@ font-family: 'Raleway',sans-serif;
 color: #444;
 position:relative;
 z-index:-1;
+margin-bottom: -40px;
 &::after {
     border: 0.8px solid #333;
     bottom: 32px;
@@ -17,8 +18,13 @@ z-index:-1;
     margin: 0 auto;
     position: absolute;
     right: 0;
-    width: 10%;
+    width: 15%;
 }
+`;
+
+const Image = styled.img`
+position:relative;
+z-index:-1;
 `;
 
 const Para = styled.div`
@@ -33,9 +39,16 @@ line-height: 25px;
 text-align: justify;
 `;
 
-const Image = styled.img`
-position:relative;
-z-index:-1;
+const Icon = styled.img`
+
 `;
 
-export {Title,Para,Image};
+const IconDiv = styled.div`
+padding-top:30px;
+`;
+
+const ContentDiv = styled.div`
+    padding-top:50px;
+`;
+
+export {Title,Image,Para,ContentDiv,Icon,IconDiv};

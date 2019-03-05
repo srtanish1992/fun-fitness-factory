@@ -2,7 +2,7 @@ import React from "react";
 
 import {Grid,Row,Col} from "react-bootstrap";
 import Asset from "../../utils/AssetService";
-import {ImageDiv,Title,Image} from "./styled";
+import {ImageDiv,Title,Image,Picdiv} from "./styled";
 import ReactTooltip from 'react-tooltip';
 
 export default class Gallery extends React.Component {
@@ -22,7 +22,7 @@ export default class Gallery extends React.Component {
                         this.props.content.images.map((img,index)=>(
                             
                                 <Col md={4} sm={4} xs={12}>
-                                <div
+                                <Picdiv
                                 data-tip="Click Me!"
                                 onClick={() => {
                                     this.props.handleItemClick(index);
@@ -31,7 +31,7 @@ export default class Gallery extends React.Component {
                                     <Image src={Asset(img.url)}
                                     
                                     />
-                                    </div>
+                                    </Picdiv>
                                     <ReactTooltip place="top" type="dark" effect="float"/> 
                                 </Col>  
                             

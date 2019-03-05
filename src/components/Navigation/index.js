@@ -1,43 +1,88 @@
 import React from "react";
 
-import {Nav,NavUl,NavLi} from "./styled";
+import {Nav,Bars,Right,DropDown,Content,Parent} from "./styled";
+import Asset from "../../utils/AssetService";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown,faBars } from "@fortawesome/free-solid-svg-icons";
+import SideBar from "../SideBar";
 
 export default class Navigation extends React.Component {
   constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+          sideBar:false,
+          menu:false
+        };
+    }
+    
+    
+    myFunction = () =>{
+      console.log("scrolling");
+      let navbar = document.getElementById("navbar");
+      let sticky = navbar.offsetTop;
 
-        this.handleScroll = this.handleScroll.bind(this);
+      
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      
+    }
+    
+
+    componentDidMount(){
+      window.onscroll = () => this.myFunction();
     }
 
-    handleScroll() {
-        this.setState({scroll: window.scrollY});
+    openSideBar = () => {
+      this.setState({sideBar:!this.state.sideBar})
     }
-  
-  componentDidMount() {
-        const el = document.querySelector('nav');
-        this.setState({top: el.offsetTop, height: el.offsetHeight});
-        window.addEventListener('scroll', this.handleScroll);
-    }
-  
-  componentDidUpdate() {
-        this.state.scroll > this.state.top ? 
-            document.body.style.paddingTop = `${this.state.height}px` :
-            document.body.style.paddingTop = 0;
+
+    toggle = () =>{
+      this.setState({
+        menu:!this.state.menu
+      })
     }
   
   render() {
     return (
-      <Nav>
-        <NavUl>
-          <NavLi>Home</NavLi>
-          <NavLi>About</NavLi>
-          <NavLi>Careers</NavLi>
-          <NavLi>Contact</NavLi>
-          <NavLi>Help</NavLi>
-        </NavUl>
-      </Nav>
+      <Parent>
+      <Nav id="navbar">
+        {
+          this.state.sideBar && <SideBar links = {this.props.links} sideBar={this.state.sideBar}/>
+        }
+        
+        <Bars onClick={()=>this.openSideBar()} className= "bars">
+          <span><FontAwesomeIcon size="lg" icon={faBars}/></span>  
+        </Bars>
+
+        <Link to={"/"} className="image">
+          <img width={70} height={70} src={Asset("assets/logos/f3.jpg")}/>
+        </Link>  
+          <Right className="topnav-right">
+          <Link to={"/"}>
+            <a>About</a>
+          </Link>
+          <DropDown onClick={this.toggle}>
+            <a>Services<span><FontAwesomeIcon icon={faChevronDown}/></span></a>
+            <Content menu={this.state.menu}>
+              {
+                this.state.menu && this.props.links.map((link,index)=>(
+                    <Link  className="link" onClick={this.toggle} to={link.route}>
+                      <a className="services">{link.label}</a>
+                    </Link>
+                ))
+              } 
+            </Content>  
+          </DropDown>  
+            <a>Gallery</a>
+            <a>Contact Us</a>
+          </Right>
+        </Nav>
+        </Parent>
     );
   }
 }

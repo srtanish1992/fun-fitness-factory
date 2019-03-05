@@ -14,30 +14,76 @@
                 "We have a team of highly specialised, qualified and experienced sport physicians, sports psychologist, strength and conditioning trainers, physiotherapists, sports nutrition and biomechanics experts to look into the day to day needs of the athletes physical as well as mental well-being."
               ]
             },
+           {
+                  "id":2,
+                  "title":"Mission & Vision",
+                  "paras":[
+                    {
+                      "content":"To identify, develop talent from all parts of the country and to help them excel at the international stage under our Long Term Athlete Development Programme.",
+                      "icon":"olympia.svg"
+                    },
+                    {
+                      "content":"To create awareness about and prevent burnout in Sport. A high percentage of young athletes suffer mental or physical burnout and opt of sport despite having the talent to excel.",
+                      "icon":"women-stressed.svg"
+                    },
+                    {
+                      "content":"To facilitate a career in Sports by focusing on Athlete Career and Education which would include their life post-retirement.",
+                      "icon":"brain.svg"
+                    },
+                    {
+                      "content":"To create a culture of sporting excellence on which the society can thrive upon.",
+                      "icon":"podium.svg"
+                    }
+                  ]
+            },
             {
-              "id":2,
+              "id":3,
+              "title":"What makes F3 unique?",
+              "features":{
+                "row1":[
+                  {
+                  "heading":"One Stop Centre",
+                  "content":"F3 has highly qualified coaches from different Sports Science disciplines at one location. It is perhaps the only team to have experts who have studied from the best institutes abroad and also understand the Indian context."
+                  },
+                  {
+                    "heading":"Team Input",
+                    "content":"Our team of experts works very closely and monitors the progress of each individual athlete."
+                  }
+                ],
+                "row2":[
+                  {
+                    "heading":"Latest Scientific Equipment",
+                    "content":"Use of latest sport science equipment to assess, measure, train and improve fitness levels and playing prowess."
+                  },
+                  {
+                    "heading":"Customized Service",
+                    "content":"We respect the fact that each athlete is different and the course of action cannot be the same for a group of athletes. “Attention to the Individual” is our primary focus."
+                  }
+                ],
+                "row3":[
+                  {
+                    "heading":"Transparency",
+                    "content":"One can only improve what one can Measure. We measure and track an athlete’s progress periodically using reliable and accurate equipment."
+                  },
+                  {
+                    "heading":"Long-Term Association",
+                    "content":"We are an athlete’s support team through the years so that we stand by them at all times and assist them in different ways using Sports Science both on and off the field."
+                  }
+                ]  
+              }
+            },
+            {
+              "id":4,
               "title":"Founders",
-              "team":[
+              "founders":[
                 {
-                  "image":"satish",
+                  "image":"satish.jpg",
                   "name":"Satish Gaikwad",
                   "position":"Founder and Director",
                   "about":"Satish is the master par excellence who is a ICC coach and has a decade os experience, having worked with over 15,000 players including international, national and ranji trophy players. He has worked for well-known academies around the world which includes academies in UK, Dubai and Sri-Lanka."
                 },
                 {
-                  "image":"swati",
-                  "name":"Swati Saraf",
-                  "position":"Co-Founder and Director",
-                  "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
-                },
-                {
-                  "image":"swati",
-                  "name":"Swati Saraf",
-                  "position":"Co-Founder and Director",
-                  "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
-                },
-                {
-                  "image":"swati",
+                  "image":"swati.jpg",
                   "name":"Swati Saraf",
                   "position":"Co-Founder and Director",
                   "about":"Swati is a megamind with tons of experience and insights into the day-to-day operations and an unparalleled experience of 12 years. She has an eye for detail and has the most effective, economic and empact heavy solutions for our clients."
@@ -45,7 +91,43 @@
               ]
             },
             {
-              "id":3,
+              "id":5,
+              "title":"Team",
+              "team":[
+                {
+                  "image":"Antriksh.jpeg",
+                  "name":"Antriksh Jaiswal",
+                  "position":"Head of Startegy & Partnerships",
+                  "about":"content required"
+                },
+                {
+                  "image":"Kushagra.jpg",
+                  "name":"Kushagra Wadhwa",
+                  "position":"Strength & Conditioning Coach",
+                  "about":"content required"
+                },
+                {
+                  "image":"Manish.jpg",
+                  "name":"Dr. Manish Pardesi",
+                  "position":"Sports Physio",
+                  "about":"content required"
+                },
+                {
+                  "image":"Sushant.jpeg",
+                  "name":"Sushant Nerurkar",
+                  "position":"Media Manager",
+                  "about":"content required"
+                },
+                {
+                  "image":"Adarsh.jpg",
+                  "name":"Adarsh T",
+                  "position":"Sports Nutritionist",
+                  "about":"content required"
+                }
+              ]
+            },
+            {
+              "id":6,
               "title":"Gallery",
               "images":[
                 {
@@ -75,7 +157,7 @@
               ]
             },
             {
-              "id":4,
+              "id":7,
               "title":"Contact",
               "logo":"assets/logos/logoff3.jpg",
               "info":[
@@ -110,6 +192,48 @@
           
         }
       ]
+    },{
+      "services":[
+        {
+          "title":"High Performance Coaching",
+          "image":"high.jpg",
+          "content":[
+            "High performance sport coaching is a complex collection of inter-disciplinary practices with a focus on the preparation and competition requirements of athletes and teams engaged at any level of sporting competition.",
+            "Sport research, coaching best practices and scientific principles are the key to Long Term Athlete Development (LTAD). We have to take advantage of best sport science practices in coaching and training to optimize the development of our athletes.",
+            "The logic behind Long Term Athlete Development Framework is that children and adults will get active, stay active and even reach the greatest heights of sporting achievement if they do the right things at the correct time. It is critical for individuals to be aware of the opportunities that exist for them and to engage in sport and physical activity best suited for them.",
+            "We also focus on mental, cognitive and emotional development of any athlete both at the development stage as well as the high performance stage."
+          ]
+        },
+        {
+          "title":"Scientific Assessment",
+          "image":"scientific.jpg",
+          "content":[
+            "The regular monitoring via scientific assessment of physical fitness and sports centric performance is important in any sport to increase the likelihood of success. Sport specific assessment process leads to improved results.",
+            "We believe in optimizing performance of all athletes through measuring and quantifying the subtleties and complexities of athletic movement using state-of-the-art sports science technologies. Our team at F3 assesses all aspects of athletic performance by using the most advanced technologies and machinery. The athlete analysis is then used to identify areas of imbalances or weaknesses and to develop individualized protocols to maximize athletic performance, ensure faster return to play following an injury and prevent future injuries and also increase productivity on the field.",
+            "Our program is not restricted only to Pune but we provide services all over India which makes athlete care even more convenient by bringing our team of sports science experts in close contact with the athlete under observation."
+          ]
+        },
+        {
+          "title":"Strength & Conditioning",
+          "image":"strength.jpg",
+          "content":[
+            "Strength & Conditioning is physical and physiological development of athletes for better performance and it encompasses the entire development of athlete and what is needed to improve physical performance.",
+            "The role of a strength and conditioning is to use the exercises prescribed to improve performance in athletic and sporting  competition. This in a way also helps the athletes with injury prevention and proper mechanics within their sports performances.",
+            "Strength and Conditioning is about more than lifting weights – it encompasses the entire development of the athlete and what is needed to improve physical performance. This includes plyometrics, speed and agility, endurance and core stability with strength training being just one piece of the jigsaw.",
+            "Research has demonstrated that not only does training improve performance; it also shows that that incorrect training can cause decrements to performance. Our trainers believe in the mantra of train to compete and train to win. We see any athlete as a world class sportsperson with the potential to excel and develop even more."
+          ]
+        },
+        {
+          "title":"Sports Nutrition & Psychology",
+          "image":"Nutrition.jpg",
+          "content":[
+            "Nutrition is important for athletes because it provides the source of energy. The food we eat has an impact on our strength, training, performance and recovery. Psychology is about improving our attitude and mental game skills to help us perform better by identifying limitations and embracing a healthier philosophy about sports.",
+            "Our team sports nutritionists continuously assess your current nutritional health status. Develop goals for body composition, weight and  diet. Design a specific nutritional plan to fuel your body and excel on the field. Plan appropriate diets for various weight and body composition goals, including increasing muscle, losing weight or gaining weight.",
+            "Our team of sports psychologists are in the process of preventing athletes from caring too much about results and what people think. They teach the athletes about learning how to manage thoughts versus feelings. Learning how to deal with failure, negativity and misinformation. Better understanding who you are, who you want to be and what others see you as. Improving an athlete's confidence and teaching athletes how to cope with pressures associated with competition. The experts are also teaching athletes to enjoy their sport, dealing with difficulty or setbacks and improving focus in sport."
+          ]
+        }
+      ]
     }
+    
   ]
 }

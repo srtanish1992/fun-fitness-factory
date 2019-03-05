@@ -17,7 +17,7 @@ z-index:-1;
     margin: 0 auto;
     position: absolute;
     right: 0;
-    width: 5%;
+    width: 10%;
 }
 
 `;
@@ -50,7 +50,7 @@ opacity: 1;
   border-radius: 5px 5px 0 0;
 `;
 
-const Card1 = styled.div`
+const Card = styled.div`
 position:relative;
 padding:0;
 width: 280px;
@@ -69,30 +69,6 @@ border-radius: 5px;
         opacity: 0.3;
     }
 }
-// @media (max-width: 767px) {
-//     margin-top:50px;
-//   }    
-`;
-
-const Card2 = styled.div`
-position:relative;
-padding:0;
-width: 280px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
-border-radius: 5px;
-&:hover {
-    cursor:pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-&:hover {
-    ${AboutDiv} {
-        opacity: 1;
-    }
-    ${Image} {
-        opacity: 0.3;
-    }
-}  
 `;
 
 const Description = styled.div`
@@ -127,6 +103,7 @@ font-weight: 200;
 `;
 
 const About = styled.div`
+text-align:justify;
 color: white;
 font-size: 16px;
 padding: 16px 10px;
@@ -135,36 +112,19 @@ line-height: 22px;
 font-weight: 200;
 `;
 
-const ParentDiv2 = styled.div`
-padding-left:180px;
-margin-top:50px;
-    .adarsh {
-        margin-left:80px !important;
-        @media (max-width: 767px) {
-            margin-left:0 !important;
-            margin-top:50px;
-          }
-    }
+const ParentDiv = styled.div`
+padding-left:200px;
+.swati {
+    margin-left:100px !important;
     @media (max-width: 767px) {
-        padding-left:0px;
+        margin-left:0px !important;
         margin-top:50px;
       }
-
-    
+} 
+@media (max-width: 767px) {
+    padding-left:0px;
+  }
 `;
 
-const ParentDiv1 = styled.div`
-.antriksh {
-    @media (max-width: 767px) {
-        margin-top:50px;
-      }
-}  
 
-.kushagra {
-    @media (max-width: 767px) {
-        margin-top:50px;
-      }
-}
-`;
-
-export {Title,Image,Card1,Card2,Name,Position,About,Description,AboutDiv,TeamDiv,ParentDiv1,ParentDiv2};
+export {Title,Image,Name,Position,About,Description,AboutDiv,TeamDiv,ParentDiv,Card};

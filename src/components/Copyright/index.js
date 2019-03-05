@@ -12,7 +12,7 @@ export default class Copyright extends React.Component {
             
                     <Copy>
                         <FontAwesomeIcon size="lg" icon={faCopyright} />
-                        <span>2018. All Rights Reserved By F3 Sports.</span>
+                        <span>2019. All Rights Reserved By F3 Sports.</span>
                     </Copy>
                 
         )

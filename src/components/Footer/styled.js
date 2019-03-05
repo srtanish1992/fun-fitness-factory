@@ -11,7 +11,7 @@ margin-top:70px;
 padding:50px 0;
 background: #f9f9f9;
 position:relative;
-z-index:-1;
+// z-index:-1;
 h2 {
     color: #444;
     font-size: 20px;
@@ -28,7 +28,7 @@ h2 {
 const Contact = styled.div`
 padding:10px 0;
 font-size:20px;
-span {
+a {
     padding-right: 20px; 
     font-size:16px;
     font-family: 'Open Sans', sans-serif;
@@ -40,7 +40,7 @@ const Social = styled.div`
 padding:50px 0;
 display:inline-block;
 padding-right: 20px;
-span {
+a {
     border: 1px solid #444;
     color: #444;
     display: block;
@@ -51,7 +51,17 @@ span {
     text-align: center;
     width: 40px;
     border-radius: 50%;
+    
 }
+
+ .faFacebook {
+        background-color:#3b5999;
+}
+
+.faInstagram {
+    background-color:#e4405f;
+}
+
 `;
 
 const Copy = styled.div`

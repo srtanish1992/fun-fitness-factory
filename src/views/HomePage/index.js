@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import { GlobalState } from "../../utils/GlobalState";
 import { HomePageImage, Image, DivBlock } from "./styled";
 import { Grid, Col, Row } from "react-bootstrap";
@@ -9,11 +9,13 @@ import Team from "../../components/Team"
 import Gallery from "../../components/Gallery";
 import LightBox from "../../components/LightBox";
 import Footer from "../../components/Footer";
-import Copyright from "../../components/Copyright";
-import ScrollButton from "../../components/ScrollUpButton"
-import { StickyContainer, Sticky } from 'react-sticky';
+import Founder from "../../components/Founder";
+import Vision from "../../components/Vision";
+import Features from "../../components/Features";
 
-export default class HomePage extends React.Component {
+
+
+export default class HomePage extends Component {
   constructor(props){
     super(props);
     this.state={
@@ -32,24 +34,8 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <StickyContainer>
-        <Sticky>
-                            {({
-                              style,
-                  
-                              // the following are also available but unused in this example
-                              isSticky,
-                              wasSticky,
-                              distanceFromTop,
-                              distanceFromBottom,
-                              calculatedHeight
-                            }) => (
-                              <header style={style}>
-                                <Navigation/>
-                              </header>
-                            )}
-                          </Sticky>
-                            <Carousel />
+        
+        <Carousel />
         <GlobalState>
           {global =>
             global.payload.pages && 
@@ -59,7 +45,7 @@ export default class HomePage extends React.Component {
                        
                        (
                         <React.Fragment>
-                           {this.state.isOpen && section.id == 3 && (
+                           {this.state.isOpen && section.id == 6 && (
                               <LightBox
                                 content={section.images}
                                 activeIndex={this.state.photoIndex}
@@ -70,12 +56,25 @@ export default class HomePage extends React.Component {
                             {
                               section.id == 1 && <AboutUs content={section}/> 
                             }
-                              {
+
+                            {
                                 section.id == 2 &&
+                                <Vision content={section}/>
+                              }
+                              {
+                                section.id == 3 &&
+                                <Features content={section}/>
+                              }
+                              {
+                                section.id == 4 &&
+                                <Founder content={section}/>
+                              }
+                              {
+                                section.id == 5 &&
                                 <Team content={section}/>
                               }
                                  {
-                                   section.id == 3 &&
+                                   section.id == 6 &&
                                    <Gallery 
                               content={section} 
                               handleItemClick={i =>
@@ -85,9 +84,9 @@ export default class HomePage extends React.Component {
                                  } 
                             
                             
-                            {
-                              section.id == 4 && <Footer content={section}/>
-                            }
+                            {/* {
+                              section.id == 7 && <Footer content={section}/>
+                            } */}
                             
                           
                           
@@ -104,9 +103,7 @@ export default class HomePage extends React.Component {
             )
           }
         </GlobalState>
-        <Copyright/>
-        <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
-        </StickyContainer>
+        
       </React.Fragment>
     );
   }

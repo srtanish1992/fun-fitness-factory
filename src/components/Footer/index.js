@@ -34,16 +34,16 @@ export default class Footer extends React.Component {
                                 {i.type == "normal" && 
                                 <Contact>
                                     
-                                <span className={i.icon}>
+                                <a className={i.icon}>
                                 <FontAwesomeIcon size="lg" icon={i.icon == "faMapMarker" ? faMapMarker : (i.icon == "faEnvelope" ? faEnvelope : faPhoneVolume)} />
-                                </span>  
+                                </a>  
                                   <span>{i.content}</span>  
                                 </Contact>
                                 }
                                 {i.type == "social" && 
                                 <Social>
-                                <span className={i.icon}><FontAwesomeIcon size="lg" icon={i.icon == "faFacebook" ? faFacebookF : faInstagram} />
-                                </span>
+                                <a href ={i.icon == "faFacebook" ? "https://www.facebook.com/F3-Fun-Fitness-Factory-1521363167948313/" : "https://www.instagram.com/f3_fun_fitness_factory/?utm_source=ig_profile_share&igshid=1s5selxemfj1g"} target="blank" className={i.icon}><FontAwesomeIcon size="lg" icon={i.icon == "faFacebook" ? faFacebookF : faInstagram} />
+                                </a>
                                 </Social>
                             }
                             </React.Fragment>
