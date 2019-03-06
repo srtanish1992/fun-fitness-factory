@@ -32,9 +32,9 @@ class AppProvider extends Component {
   componentDidMount() {
     API.getPayload().then(res => {
       console.log(res);
-      Object.keys(res.data.payload).forEach(key => {
+      Object.keys(res.data.response).forEach(key => {
         let payload = this.state.payload;
-        payload[key] = res.data.payload[key];
+        payload[key] = res.data.response[key];
         this.setState({
           payload
         });
