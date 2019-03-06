@@ -71,7 +71,7 @@ export default class Carousel extends React.Component {
 
   render(){
       
-      let images = ["IMG_2314.jpg", "6.jpg", "cricket.jpeg", "IMG_1956.jpg"];
+      let images = ["IMG_2314.JPG", "6.JPG", "cricket.jpeg", "IMG_1956.JPG"];
 
         return(
           <React.Fragment>
