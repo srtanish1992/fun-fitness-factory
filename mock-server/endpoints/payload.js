@@ -53,7 +53,7 @@ module.exports = app => {
   // });
 
   app.get("/payload", (req, res) => {
-    axios.get("http://admin:anish@127.0.0.1:5984/payload/bd0fa39268f1f36899bbcbf81e000ba3").then(response => {
+    axios.get("http://admin:anish@127.0.0.1:5984/payload").then(response => {
       res.send({
         status: "Got payload",
         response: response.data
