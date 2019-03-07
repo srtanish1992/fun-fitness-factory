@@ -53,11 +53,12 @@ module.exports = app => {
   // });
 
   app.get("/payload", (req, res) => {
-    axios.get("http://admin:anish@127.0.0.1:5984/payload").then(response => {
-      res.send({
-        status: "Got payload",
-        response: response.data
-      });
-    });
+    console.log("success");
+    // axios.get("http://admin:anish@127.0.0.1:5984/payload").then(response => {
+    //   res.send({
+    //     status: "Got payload",
+    //     response: response.data
+    //   });
+    // });
   });
 };
