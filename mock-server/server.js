@@ -15,4 +15,4 @@ app.use((req, res, next) => {
 
 ["payload"].map(endpoint => require(`./endpoints/${endpoint}`)(app));
 
-app.listen(3007, () => console.log(`Server is running on port ${3007}`));
+app.listen(8080, () => console.log(`Server is running on port ${8080}`));

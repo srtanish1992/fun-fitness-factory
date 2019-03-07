@@ -3,7 +3,7 @@ let env = "local";
 let envs = {
   local: {
     hostname: "localhost",
-    port: 3007
+    port: 8080
   }
 };
 
