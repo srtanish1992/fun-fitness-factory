@@ -2,8 +2,8 @@ let env = "local";
 
 let envs = {
   local: {
-    hostname: "157.245.209.85",
-    port: 3005
+    hostname: "localhost",
+    port: 8080
   }
 };
 
