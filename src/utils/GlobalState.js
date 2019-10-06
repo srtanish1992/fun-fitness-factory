@@ -34,7 +34,7 @@ class AppProvider extends Component {
 
       
 
-      axios.get("http://127.0.0.1:5984/payload/6976a57acfd9281ace59ba77410001e4").then(response => {
+      axios.get("http://157.245.209.85:5984/payload/6976a57acfd9281ace59ba77410001e4").then(response => {
         console.log(response);
         Object.keys(response.data).forEach(key => {
           let payload = this.state.payload;
