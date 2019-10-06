@@ -78,8 +78,8 @@ export default class Navigation extends React.Component {
               } 
             </Content>  
           </DropDown>  
-            <a>Gallery</a>
-            <a>Contact Us</a>
+            {/* <a>Gallery</a>
+            <a>Contact Us</a> */}
           </Right>
         </Nav>
         </Parent>
